@@ -28,29 +28,35 @@ export const PROJECTS = [
     image: project1,
     description:
       "Responsive Portfolio",
-    technologies: ["HTML", "React", "Tailwind"],
+    technologies: ["Vite", "React", "Tailwind", "React.JS"],
+    link: "",
   },
   {
-    title: "Glazing Gorillas Website",
+    title: "Glazing Gorillas",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Responsive Website for Glazing Gorilla Games, a aquissition company with over 8+ million total visits and 70+ million media views.",
+    technologies: ["Vite", "React", "Tailwind"],
+    link: "https://glazinggorillagames.com/",
   },
   {
     title: "EdgeHacks",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Dynamic website for EdgeHacks, a Hackathon with over 200+ participants.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://edgehacks.xyz/",
   },
   {
-    title: "KFC Converter",
-    image: project4,
+    title: "EdgeHacks",
+    image: project3,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Dynamic website for EdgeHacks, a Hackathon with over 200+ participants.",
+    technologies: ["HTML", "CSS",],
+    link: "https://edgehacks.xyz/",
   },
+
+
 ];
 
 export const CONTACT = {

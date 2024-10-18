@@ -8,43 +8,31 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
-  // Correctly define the state for showing the menu
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
 
-  // Toggle menu icons when the ellipsis button is clicked
   const handleMenuToggle = () => {
     setShowMenu((prevShowMenu) => !prevShowMenu);
   };
 
   return (
-    <div className="header-style">
-      <nav className="mx-8 mb-20 flex items-center justify-between">
+    <div className="nav-default container mx-auto px-8   bg-neutral-950 ease-in duration-300  z-50 fixed top-0 ">
+      <nav className="mx-8   flex items-center justify-between">
         <div className="font-bold flex flex-shrink-0 items-center text-3xl">
           <button onClick={handleMenuToggle}>
             {showMenu ? <FaUser /> : <FaEllipsisH />}
           </button>
         </div>
 
-        {/* Conditionally rendered icons based on `showMenu` state */}
-        <div className=" m-8 flex items-center justify-center gap-4 text-2xl  ">
+        <div className="m-8 flex items-center justify-center gap-4 text-2xl ease-in duration-100">
           {showMenu ? (
             <>
-              <a
-                href=""
-                className="hover:scale-110 transition-transform duration-300  "
-              >
+              <a href="" className="icon-style">
                 about
               </a>
-              <a
-                href=""
-                className="hover:scale-110 transition-transform duration-300  "
-              >
+              <a href="" className="icon-style">
                 work
               </a>
-              <a
-                href=""
-                className="hover:scale-110 transition-transform duration-300  "
-              >
+              <a href="" className="icon-style">
                 contact
               </a>
             </>
@@ -54,13 +42,16 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/justinlam747/"
                 target="_blank"
               >
-                <FaLinkedin className="icon-style" />
+                <FaLinkedin className="icon-style size-8" />
               </a>
-              <a href="https://github.com/justinlam-code" target="_blank">
-                <FaGithub className="icon-style" />
+              <a
+                href="https://www.shutterstock.com/search/doraemon-character?image_type=vector"
+                target="_blank"
+              >
+                <FaGithub className="icon-style size-8" />
               </a>
               <a href="https://www.instagram.com/60jus/" target="_blank">
-                <FaInstagram className="icon-style" />
+                <FaInstagram className="icon-style size-8" />
               </a>
             </>
           )}

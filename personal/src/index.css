@@ -6,15 +6,14 @@
 
 :root {
   font-family: "Inter", sans-serif;
-  background: rgb(0, 0, 0);
+  background: rgb(8, 8, 8);
   
 
 }
 .icon-style {
-  background: linear-gradient(to right, #1e293b, #334155, #4b5563);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 3rem;
+  
   transition: all 0.3s ease;
   margin-right: 8px;
 }
@@ -22,24 +21,25 @@
 /* Adding hover effect */
 .icon-style:hover {
   transform: scale(1.2);
+  color: #ffffff;
    /* Slight zoom and rotate on hover */
 }
 
-.header-style {
-  border-radius: 130px;
-  width: 100%; /* Ensure the header spans the full width */
-  background-color: rgba(0, 0, 0, 0.3); /* Add some transparency */
-  backdrop-filter: blur(40px); /* Apply the blur effect */
-}
-
-.header-style:hover {
+.nav-default {
   margin-top: 2rem;
   transition: all 0.8s ease-out;
-  
-  
-  
   border-radius: 130px;
+}
+
+.nav-default:hover {
+  margin-top: 2rem;
+  transition: all 0.8s ease-out;
+  border-radius: 130px;
+  scale: 1.1;
   padding-left: 2rem;
-  padding-right: 2rem;
+}
+
+.rotate {
+
 }
 
